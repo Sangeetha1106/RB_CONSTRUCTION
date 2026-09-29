@@ -97,6 +97,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Auto-open Quote Modal Popup on Home page visit after 1.2s delay
+    const pathName = window.location.pathname;
+    const isHomePage = pathName.endsWith('index.html') || pathName === '/' || pathName.endsWith('/') || !pathName.includes('.html');
+    if (isHomePage && quoteModalBackdrop) {
+        setTimeout(() => {
+            if (!quoteModalBackdrop.classList.contains('active')) {
+                openModal();
+            }
+        }, 1200);
+    }
+
     // Attach open listener to all quote buttons
     modalTriggers.forEach(trigger => {
         trigger.addEventListener('click', openModal);
