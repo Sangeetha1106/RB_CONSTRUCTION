@@ -1,0 +1,15 @@
+{
+  "name": "rb-construction",
+  "version": "1.0.0",
+  "description": "RB Construction Company Website",
+  "scripts": {
+    "dev": "npx serve \"RB CONSTRUCTION\" -p 8080"
+  },
+  "keywords": [
+    "construction",
+    "website",
+    "architecture"
+  ],
+  "author": "RB Construction",
+  "license": "ISC"
+}
