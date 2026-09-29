@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RB Construction - Featured Projects Portfolio. Explore our construction work, architectural design and residential & commercial projects.">
-    <title>Our Projects | RB Construction</title>
+    <meta name="description" content="RB Construction - Project Details. Comprehensive overview of architectural planning, structural construction and finishing.">
+    <title>Project Details | RB Construction</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,78 +53,125 @@
         </div>
     </header>
 
-    <!-- PAGE HERO HEADER -->
-    <section class="page-hero projects-hero-bg">
+    <!-- PROJECT DETAILS HERO HEADER -->
+    <section class="page-hero project-details-hero-bg">
         <div class="page-hero-overlay"></div>
         <div class="container page-hero-container">
             <div class="section-eyebrow">
                 <span class="eyebrow-line"></span>
-                <span>OUR PROJECTS</span>
+                <span id="detailHeroCategory">PROJECT CATEGORY</span>
             </div>
-            <h1 class="page-hero-title">Projects That Reflect Our Commitment</h1>
-            <p class="page-hero-subtitle">
-                Explore our construction work and project journey.
-            </p>
+            <h1 class="page-hero-title" id="detailHeroTitle">PROJECT NAME</h1>
+            <p class="page-hero-subtitle" id="detailHeroLocation">LOCATION</p>
         </div>
     </section>
 
-    <!-- MAIN PROJECTS SECTION -->
-    <section class="section projects-listing-section">
+    <!-- PROJECT OVERVIEW & METADATA GRID -->
+    <section class="section project-overview-section">
         <div class="container">
-            <!-- Project Listing Grid -->
-            <div class="projects-grid-wrapper reveal-element" id="projectsListingGrid">
-                <!-- Site Projects (Pallikaranai & Karapakkam) -->
-                <div class="projects-uniform-grid">
-                    <div class="project-card project-card-tall" data-category="residential">
-                        <div class="project-image-wrapper">
-                            <img src="assets/images/pallikaranai-1.jpg" alt="Pallikaranai Site by RB Construction" class="project-img" loading="lazy">
-                        </div>
-                        <div class="project-card-body">
-                            <span class="project-category-tag">Residential Construction</span>
-                            <h3 class="project-title">Pallikaranai Site</h3>
-                            <p class="project-location">
-                                <svg class="loc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                Pallikaranai, Chennai
-                            </p>
-                            <div class="project-site-note">This all are at Pallikaranai site images</div>
-                            <p class="project-desc">Multistory residential construction with RCC framing, brick masonry, slab work and door frame pooja.</p>
-                        </div>
-                    </div>
-                    <div class="project-card project-card-tall" data-category="renovation">
-                        <div class="project-image-wrapper">
-                            <img src="assets/images/karapakkam-renovation-1.jpg" alt="Renovation work at Karapakkam by RB Construction" class="project-img" loading="lazy">
-                        </div>
-                        <div class="project-card-body">
-                            <span class="project-category-tag">Renovation</span>
-                            <h3 class="project-title">Renovation Work at Karapakkam</h3>
-                            <p class="project-location">
-                                <svg class="loc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                Karapakkam, Chennai
-                            </p>
-                            <div class="project-site-note">This all are at Karapakkam site images</div>
-                            <p class="project-desc">Building renovation with clay-tile roofing, decorative detailing, jali railings and a carved wooden main door.</p>
-                        </div>
-                    </div>
-                    <div class="project-card project-card-tall" data-category="renovation">
-                        <div class="project-image-wrapper">
-                            <img src="assets/images/karapakkam-before-renovation.jpg" alt="Karapakkam building before renovation" class="project-img" loading="lazy">
-                        </div>
-                        <div class="project-card-body">
-                            <span class="project-category-tag">Renovation</span>
-                            <h3 class="project-title">Karapakkam Building Before Renovation</h3>
-                            <p class="project-location">
-                                <svg class="loc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                Karapakkam, Chennai
-                            </p>
-                            <div class="project-site-note">This all are at Karapakkam site images</div>
-                            <p class="project-desc">The existing Karapakkam building as it stood before the renovation work began.</p>
-                        </div>
+            <!-- Project Meta Cards Row -->
+            <div class="project-meta-grid reveal-element">
+                <div class="meta-item">
+                    <span class="meta-label">Project Type</span>
+                    <strong class="meta-value" id="metaType">PROJECT TYPE</strong>
+                </div>
+
+                <div class="meta-item">
+                    <span class="meta-label">Category</span>
+                    <strong class="meta-value" id="metaCategory">PROJECT CATEGORY</strong>
+                </div>
+
+                <div class="meta-item">
+                    <span class="meta-label">Location</span>
+                    <strong class="meta-value" id="metaLocation">LOCATION</strong>
+                </div>
+
+                <div class="meta-item">
+                    <span class="meta-label">Project Status</span>
+                    <strong class="meta-value" id="metaStatus">PROJECT STATUS</strong>
+                </div>
+            </div>
+
+            <!-- Project Content Split Layout -->
+            <div class="project-details-grid reveal-element">
+                <!-- Left Description Column -->
+                <div class="project-description-column">
+                    <h2 class="section-title">Project Overview</h2>
+                    <p class="project-desc-lead" id="detailLead">
+                        Project details will be updated soon.
+                    </p>
+                    <p class="project-desc-text" id="detailText">
+                        A detailed project description, scope of work, structural specifications, and architectural approach will be provided here as soon as actual client data is updated.
+                    </p>
+                </div>
+
+                <!-- Right Highlights Column -->
+                <div class="project-highlights-column">
+                    <div class="highlights-card">
+                        <h3 class="highlights-title">PROJECT HIGHLIGHTS</h3>
+                        <ul class="highlights-list" id="detailHighlights">
+                            <li>
+                                <svg class="h-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Structural Engineering & Architectural Planning</span>
+                            </li>
+                            <li>
+                                <svg class="h-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Quality Material Selection & On-Site Execution</span>
+                            </li>
+                            <li>
+                                <svg class="h-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Custom Flooring, Plumbing & Electrical Finishing</span>
+                            </li>
+                            <li>
+                                <svg class="h-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Complete Quality Inspection Before Handover</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- PROJECT GALLERY SHOWCASE SECTION -->
+    <section class="section project-gallery-section">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>PROJECT IMAGES</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">Visual Showcase</h2>
+            </div>
+
+            <div class="project-details-gallery-grid reveal-element" id="detailGallery">
+                <!-- Gallery Image Placeholder 1 -->
+                <div class="p-detail-img-box lightbox-trigger" data-title="PROJECT IMAGE 01" data-img="assets/images/project-1.jpg">
+                    <img src="assets/images/project-1.jpg" alt="PROJECT IMAGE 01" class="p-detail-img" loading="lazy">
+                    <div class="p-detail-overlay">
+                        <span>PROJECT IMAGE 01</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image Placeholder 2 -->
+                <div class="p-detail-img-box lightbox-trigger" data-title="PROJECT IMAGE 02" data-img="assets/images/project-2.jpg">
+                    <img src="assets/images/project-2.jpg" alt="PROJECT IMAGE 02" class="p-detail-img" loading="lazy">
+                    <div class="p-detail-overlay">
+                        <span>PROJECT IMAGE 02</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image Placeholder 3 -->
+                <div class="p-detail-img-box lightbox-trigger" data-title="PROJECT IMAGE 03" data-img="assets/images/project-3.jpg">
+                    <img src="assets/images/project-3.jpg" alt="PROJECT IMAGE 03" class="p-detail-img" loading="lazy">
+                    <div class="p-detail-overlay">
+                        <span>PROJECT IMAGE 03</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- CALL TO ACTION SECTION -->
     <section class="section cta-section">
@@ -135,13 +182,13 @@
                     <span>START YOUR JOURNEY</span>
                     <span class="eyebrow-line"></span>
                 </div>
-                <h2 class="section-title">Planning Your Next Project?</h2>
+                <h2 class="section-title">Interested in a Similar Project?</h2>
                 <p class="section-subtitle">
                     Let's discuss your ideas, requirements and construction plans.
                 </p>
                 <div class="cta-buttons">
                     <button class="btn btn-primary quote-modal-trigger">Get Free Quote</button>
-                    <a href="tel:+919876543210" class="btn btn-secondary btn-dark">Talk to Us</a>
+                    <a href="projects.html" class="btn btn-secondary btn-dark">Back to Projects</a>
                 </div>
             </div>
         </div>
@@ -301,7 +348,22 @@
         </div>
     </div>
 
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox-modal" id="lightboxModal" aria-hidden="true">
+        <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+        <div class="lightbox-container">
+            <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close Lightbox">&times;</button>
+            <button class="lightbox-nav-btn prev-btn" id="lightboxPrevBtn" aria-label="Previous Image">&#10094;</button>
+            <button class="lightbox-nav-btn next-btn" id="lightboxNextBtn" aria-label="Next Image">&#10095;</button>
+            
+            <div class="lightbox-content">
+                <img src="" alt="" id="lightboxImg" class="lightbox-img">
+                <div class="lightbox-caption" id="lightboxCaption"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Main JavaScript File -->
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>

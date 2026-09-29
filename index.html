@@ -1,17 +1,1661 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RB Construction | Building Your Vision, Creating Your Future</title>
-    <meta name="description" content="Reliable construction solutions with a focus on quality, craftsmanship and professional execution." />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RB Construction - Premium residential and commercial construction services. Thoughtful planning, quality construction, on-time execution.">
+    <title>RB Construction | Premium Construction Services</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-brand-offwhite text-brand-charcoal antialiased selection:bg-brand-amber selection:text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR SECTION -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-container">
+            <!-- Brand Logo -->
+            <a href="index.html" class="brand-logo" aria-label="RB Construction Home">
+                <img src="assets/logo image/logo image.png" alt="RB Construction Logo" class="logo-img">
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Navbar Actions (Contact Info & CTA Button) -->
+            <div class="nav-actions">
+                <a href="tel:+919876543210" class="nav-phone">
+                    <svg class="phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span class="phone-number">+91 98765 43210</span>
+                </a>
+                <button class="btn btn-primary quote-btn" id="navQuoteBtn">Get Free Quote</button>
+                
+                <!-- Mobile Hamburger Button -->
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Eyebrow Badge -->
+                <div class="hero-eyebrow animate-fade">
+                    <span class="eyebrow-line"></span>
+                    <span>BUILDING WITH PURPOSE</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="hero-heading animate-fade">
+                    Building Your Vision.<br>
+                    <span class="heading-accent">Creating Your Future.</span>
+                </h1>
+
+                <!-- Supporting Description -->
+                <p class="hero-description animate-fade">
+                    From thoughtful planning to quality construction, RB Construction delivers spaces designed for lasting value.
+                </p>
+
+                <!-- Call to Action Buttons -->
+                <div class="hero-cta animate-fade">
+                    <button class="btn btn-primary hero-btn" id="heroQuoteBtn">Get Free Quote</button>
+                    <a href="#projects" class="btn btn-secondary hero-btn">View Our Projects</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- HERO TRUST STRIP -->
+        <div class="hero-trust-strip">
+            <div class="trust-container">
+                <div class="trust-item">
+                    <div class="trust-icon-wrapper">
+                        <svg class="trust-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <polyline points="9 12 11 14 15 10"></polyline>
+                        </svg>
+                    </div>
+                    <div class="trust-text">
+                        <span class="trust-title">Quality Construction</span>
+                        <span class="trust-desc">Uncompromised materials & craft</span>
+                    </div>
+                </div>
+
+                <div class="trust-divider"></div>
+
+                <div class="trust-item">
+                    <div class="trust-icon-wrapper">
+                        <svg class="trust-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="trust-text">
+                        <span class="trust-title">Professional Planning</span>
+                        <span class="trust-desc">Precision structural engineering</span>
+                    </div>
+                </div>
+
+                <div class="trust-divider"></div>
+
+                <div class="trust-item">
+                    <div class="trust-icon-wrapper">
+                        <svg class="trust-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div class="trust-text">
+                        <span class="trust-title">On-Time Execution</span>
+                        <span class="trust-desc">Strict adherence to timelines</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+            <span class="mouse-icon">
+                <span class="wheel"></span>
+            </span>
+        </a>
+    </section>
+
+    <!-- 1. ABOUT RB CONSTRUCTION SECTION -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left Image Column -->
+                <div class="about-image-column reveal-element">
+                    <div class="about-image-wrapper">
+                        <img src="assets/images/about-img.jpg" alt="RB Construction Architecture & Building Site" class="about-img" loading="lazy">
+                        <div class="about-image-accent-border"></div>
+                    </div>
+                </div>
+
+                <!-- Right Content Column -->
+                <div class="about-content-column reveal-element">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span>ABOUT RB CONSTRUCTION</span>
+                    </div>
+                    <h2 class="section-title">Building Spaces That Stand the Test of Time</h2>
+                    <p class="about-text-lead">
+                        RB Construction is committed to delivering thoughtfully planned and quality-built spaces that combine functionality, durability and modern design.
+                    </p>
+                    <p class="about-text-sub">
+                        From the initial planning stage to final execution, we focus on clear communication, quality workmanship and attention to every detail.
+                    </p>
+
+                    <!-- Trust Points -->
+                    <div class="about-trust-points">
+                        <div class="about-trust-point">
+                            <div class="trust-check-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span class="trust-point-label">Quality Focused</span>
+                        </div>
+                        <div class="about-trust-point">
+                            <div class="trust-check-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span class="trust-point-label">Professional Execution</span>
+                        </div>
+                        <div class="about-trust-point">
+                            <div class="trust-check-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span class="trust-point-label">Customer Centric</span>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="#services" class="btn btn-primary">Know More About Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CEO / LEADERSHIP -->
+            <div class="ceo-feature reveal-element">
+                <div class="ceo-image-wrapper">
+                    <img src="assets/images/ceo.jpg" alt="CEO of RB Construction" class="ceo-img" loading="lazy">
+                    <div class="about-image-accent-border"></div>
+                </div>
+                <div class="ceo-content">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span>LEADERSHIP</span>
+                    </div>
+                    <h3 class="ceo-title">Meet Our CEO</h3>
+                    <p class="ceo-text">
+                        Every RB Construction project is led with a clear focus on quality workmanship, transparent communication and dependable execution &mdash; from the first discussion to the final handover.
+                    </p>
+                    <span class="ceo-role">Chief Executive Officer, RB Construction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. OUR SERVICES SECTION -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>WHAT WE DO</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">Complete Construction Solutions</h2>
+                <p class="section-subtitle">
+                    From planning and design to construction and finishing, we provide reliable solutions for residential and commercial projects.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card reveal-element">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Residential Construction</h3>
+                    <p class="service-card-desc">
+                        Quality homes designed and built around your lifestyle and requirements.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card reveal-element">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                            <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                            <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                            <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                            <line x1="15" y1="10" x2="15" y2="10.01"></line>
+                            <line x1="9" y1="14" x2="9" y2="14.01"></line>
+                            <line x1="15" y1="14" x2="15" y2="14.01"></line>
+                            <line x1="9" y1="18" x2="15" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Commercial Construction</h3>
+                    <p class="service-card-desc">
+                        Professional construction solutions for functional and modern commercial spaces.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card reveal-element">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Architectural Planning</h3>
+                    <p class="service-card-desc">
+                        Thoughtful planning and design focused on functionality, aesthetics and long-term value.
+                    </p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card reveal-element">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                            <path d="M2 2l7.586 7.586"></path>
+                            <circle cx="11" cy="11" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Interior & Finishing</h3>
+                    <p class="service-card-desc">
+                        Detailed interior and finishing work that brings the final vision to life.
+                    </p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="service-card reveal-element">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Renovation & Remodeling</h3>
+                    <p class="service-card-desc">
+                        Transform existing spaces with practical renovation and modern upgrades.
+                    </p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="service-card reveal-element">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                            <path d="M9 14l2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Project Management</h3>
+                    <p class="service-card-desc">
+                        Coordinated execution with attention to quality, timeline and project requirements.
+                    </p>
+                </div>
+            </div>
+
+            <!-- View All Services CTA Button -->
+            <div class="services-cta text-center reveal-element" style="margin-top: 3.5rem;">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. HOW WE WORK (PROCESS) SECTION -->
+    <section class="section process-section" id="process">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>OUR PROCESS</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">From Plan to Completion</h2>
+                <p class="section-subtitle">
+                    We follow a structured process to ensure every project moves smoothly from the first idea to final delivery.
+                </p>
+            </div>
+
+            <!-- Horizontal / Vertical Timeline Container -->
+            <div class="process-timeline reveal-element">
+                <div class="process-line"></div>
+                
+                <div class="process-steps">
+                    <!-- Step 1 -->
+                    <div class="process-step">
+                        <div class="step-number-wrapper">
+                            <span class="step-number">01</span>
+                        </div>
+                        <div class="step-content">
+                            <h3 class="step-title">PLAN</h3>
+                            <p class="step-desc">Understand requirements, site conditions and project goals.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process-step">
+                        <div class="step-number-wrapper">
+                            <span class="step-number">02</span>
+                        </div>
+                        <div class="step-content">
+                            <h3 class="step-title">DESIGN</h3>
+                            <p class="step-desc">Develop practical architectural and design concepts.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="process-step">
+                        <div class="step-number-wrapper">
+                            <span class="step-number">03</span>
+                        </div>
+                        <div class="step-content">
+                            <h3 class="step-title">APPROVAL</h3>
+                            <p class="step-desc">Finalize drawings, requirements and project planning.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="process-step">
+                        <div class="step-number-wrapper">
+                            <span class="step-number">04</span>
+                        </div>
+                        <div class="step-content">
+                            <h3 class="step-title">CONSTRUCT</h3>
+                            <p class="step-desc">Execute construction with quality-focused workmanship.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="process-step">
+                        <div class="step-number-wrapper">
+                            <span class="step-number">05</span>
+                        </div>
+                        <div class="step-content">
+                            <h3 class="step-title">DELIVER</h3>
+                            <p class="step-desc">Complete the project with final checks and handover.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>OUR PROJECTS</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">Spaces We've Built With Purpose</h2>
+                <p class="section-subtitle">
+                    Explore a selection of residential and commercial spaces where thoughtful planning meets quality construction.
+                </p>
+            </div>
+
+            <div class="projects-uniform-grid reveal-element">
+                <div class="project-card project-card-tall" data-category="residential">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/pallikaranai-1.jpg" alt="Pallikaranai Site by RB Construction" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-category-tag">Residential Construction</span>
+                        <h3 class="project-title">Pallikaranai Site</h3>
+                        <p class="project-location">
+                            <svg class="loc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Pallikaranai, Chennai
+                        </p>
+                        <div class="project-site-note">This all are at Pallikaranai site images</div>
+                        <p class="project-desc">Multistory residential construction with RCC framing, brick masonry, slab work and door frame pooja.</p>
+                    </div>
+                </div>
+                <div class="project-card project-card-tall" data-category="renovation">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/karapakkam-renovation-1.jpg" alt="Renovation work at Karapakkam by RB Construction" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-category-tag">Renovation</span>
+                        <h3 class="project-title">Renovation Work at Karapakkam</h3>
+                        <p class="project-location">
+                            <svg class="loc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Karapakkam, Chennai
+                        </p>
+                        <div class="project-site-note">This all are at Karapakkam site images</div>
+                        <p class="project-desc">Building renovation with clay-tile roofing, decorative detailing, jali railings and a carved wooden main door.</p>
+                    </div>
+                </div>
+                <div class="project-card project-card-tall" data-category="renovation">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/karapakkam-before-renovation.jpg" alt="Karapakkam building before renovation" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-category-tag">Renovation</span>
+                        <h3 class="project-title">Karapakkam Building Before Renovation</h3>
+                        <p class="project-location">
+                            <svg class="loc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Karapakkam, Chennai
+                        </p>
+                        <div class="project-site-note">This all are at Karapakkam site images</div>
+                        <p class="project-desc">The existing Karapakkam building as it stood before the renovation work began.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Projects Button -->
+            <div class="projects-cta text-center reveal-element" style="margin-top: 3.5rem;">
+                <a href="projects.html" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. WHY CHOOSE RB CONSTRUCTION SECTION -->
+    <section class="section why-us-section" id="why-us">
+        <div class="container">
+            <div class="why-us-grid">
+                <!-- Left Image Column -->
+                <div class="why-us-image-column reveal-element">
+                    <div class="why-us-image-wrapper">
+                        <img src="assets/images/why-choose-img.jpg" alt="RB Construction Engineer and Site Management" class="why-us-img" loading="lazy">
+                        <div class="why-us-image-accent"></div>
+                    </div>
+                </div>
+
+                <!-- Right Content Column -->
+                <div class="why-us-content-column reveal-element">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span>WHY RB CONSTRUCTION</span>
+                    </div>
+                    <h2 class="section-title">Built Around Quality, Trust & Detail</h2>
+                    <p class="why-us-description">
+                        Every project deserves careful planning, transparent communication and quality-focused execution. Our approach is built around delivering spaces that are practical, durable and thoughtfully finished.
+                    </p>
+
+                    <!-- 4 Benefits Grid -->
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <span class="benefit-number">01</span>
+                            <div class="benefit-content">
+                                <h3 class="benefit-title">Quality Workmanship</h3>
+                                <p class="benefit-desc">Attention to detail at every stage of construction.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <span class="benefit-number">02</span>
+                            <div class="benefit-content">
+                                <h3 class="benefit-title">Transparent Process</h3>
+                                <p class="benefit-desc">Clear communication from planning through completion.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <span class="benefit-number">03</span>
+                            <div class="benefit-content">
+                                <h3 class="benefit-title">Thoughtful Planning</h3>
+                                <p class="benefit-desc">Practical solutions designed around your requirements.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <span class="benefit-number">04</span>
+                            <div class="benefit-content">
+                                <h3 class="benefit-title">Reliable Execution</h3>
+                                <p class="benefit-desc">Focused coordination to keep the project moving smoothly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CLIENT-FIRST APPROACH SECTION (Contrast Dark Section) -->
+    <section class="section client-first-section">
+        <div class="client-first-bg-overlay"></div>
+        <div class="container client-first-container reveal-element">
+            <div class="section-header text-center">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>CLIENT-FIRST APPROACH</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title text-white">Your Vision. Our Responsibility.</h2>
+                <p class="section-subtitle text-light">
+                    We believe a successful construction project begins with understanding the client's vision and ends with delivering it with care.
+                </p>
+            </div>
+
+            <!-- Horizontal 3 Points -->
+            <div class="client-points-grid">
+                <div class="client-point-card">
+                    <div class="point-badge">01</div>
+                    <h3 class="point-title">Understand</h3>
+                    <p class="point-desc">We listen to your requirements and project goals.</p>
+                </div>
+
+                <div class="client-point-card">
+                    <div class="point-badge">02</div>
+                    <h3 class="point-title">Build</h3>
+                    <p class="point-desc">We execute with quality, coordination and attention to detail.</p>
+                </div>
+
+                <div class="client-point-card">
+                    <div class="point-badge">03</div>
+                    <h3 class="point-title">Deliver</h3>
+                    <p class="point-desc">We complete the project with a focus on finish and satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CONSTRUCTION PACKAGES SECTION -->
+    <section class="section packages-section" id="packages">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>CONSTRUCTION SOLUTIONS</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">Choose the Right Construction Approach</h2>
+                <p class="section-subtitle">
+                    Flexible construction solutions designed around your project requirements, design preferences and level of involvement.
+                </p>
+            </div>
+
+            <div class="packages-grid reveal-element">
+                <!-- Package 01 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <span class="package-number">01</span>
+                        <h3 class="package-name">Essential Build</h3>
+                        <p class="package-subtitle">Core structural foundation & essential finishing support</p>
+                        <div class="package-quote-badge">Custom Quote</div>
+                    </div>
+                    <ul class="package-features">
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Planning Support</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Core Construction</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Quality Workmanship</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Basic Finishing Support</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Project Coordination</span>
+                        </li>
+                    </ul>
+                    <div class="package-footer">
+                        <button class="btn btn-secondary btn-package quote-modal-trigger">Enquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Package 02 (Featured Popular) -->
+                <div class="package-card package-card-featured">
+                    <div class="popular-ribbon">POPULAR</div>
+                    <div class="package-header">
+                        <span class="package-number">02</span>
+                        <h3 class="package-name">Complete Build</h3>
+                        <p class="package-subtitle">Full turn-key architectural design & complete construction</p>
+                        <div class="package-quote-badge">Custom Quote</div>
+                    </div>
+                    <ul class="package-features">
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Planning & Design Coordination</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Complete Construction</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Electrical & Plumbing Coordination</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Flooring & Finishing</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Project Management</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Final Handover Support</span>
+                        </li>
+                    </ul>
+                    <div class="package-footer">
+                        <button class="btn btn-primary btn-package quote-modal-trigger">Get Free Consultation</button>
+                    </div>
+                </div>
+
+                <!-- Package 03 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <span class="package-number">03</span>
+                        <h3 class="package-name">Premium Build</h3>
+                        <p class="package-subtitle">Bespoke luxury construction & end-to-end interior execution</p>
+                        <div class="package-quote-badge">Custom Quote</div>
+                    </div>
+                    <ul class="package-features">
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Complete Planning</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Architectural Coordination</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Premium Construction</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Interior Coordination</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Detailed Finishing</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Dedicated Project Coordination</span>
+                        </li>
+                        <li>
+                            <svg class="feature-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Final Quality Review</span>
+                        </li>
+                    </ul>
+                    <div class="package-footer">
+                        <button class="btn btn-secondary btn-package quote-modal-trigger">Discuss Your Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. PROJECT COST CONSULTATION SECTION -->
+    <section class="section consultation-section" id="consultation">
+        <div class="container">
+            <div class="consultation-grid">
+                <!-- Left Image Column -->
+                <div class="consultation-image-column reveal-element">
+                    <div class="consultation-image-wrapper">
+                        <img src="assets/images/consultation-img.jpg" alt="RB Construction Planning Consultation Session" class="consultation-img" loading="lazy">
+                        <div class="consultation-image-accent"></div>
+                    </div>
+                </div>
+
+                <!-- Right Form Column -->
+                <div class="consultation-form-column reveal-element">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span>PLAN YOUR BUDGET</span>
+                    </div>
+                    <h2 class="section-title">Let's Understand Your Project</h2>
+                    <p class="consultation-desc">
+                        Every project is different. Share your basic requirements and we can help you understand the right construction approach for your needs.
+                    </p>
+
+                    <!-- Cost Consultation Form -->
+                    <form class="consultation-form" id="consultationForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cName" class="form-label">Full Name *</label>
+                                <input type="text" id="cName" class="form-input" placeholder="Your Name" required>
+                                <span class="error-msg" id="cNameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cMobile" class="form-label">Mobile Number *</label>
+                                <input type="tel" id="cMobile" class="form-input" placeholder="10-digit Mobile" required>
+                                <span class="error-msg" id="cMobileError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cLocation" class="form-label">Project Location *</label>
+                                <input type="text" id="cLocation" class="form-input" placeholder="City / Area" required>
+                                <span class="error-msg" id="cLocationError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cArea" class="form-label">Approx. Built-up Area (Sq.Ft) *</label>
+                                <input type="text" id="cArea" class="form-input" placeholder="e.g. 2400 Sq.Ft" required>
+                                <span class="error-msg" id="cAreaError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cProjectType" class="form-label">Project Type *</label>
+                            <select id="cProjectType" class="form-input" required>
+                                <option value="" disabled selected>Select Project Type</option>
+                                <option value="Individual House">Individual House</option>
+                                <option value="Villa">Villa</option>
+                                <option value="Apartment">Apartment</option>
+                                <option value="Commercial Building">Commercial Building</option>
+                                <option value="Renovation">Renovation</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span class="error-msg" id="cProjectTypeError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit-btn">Request Consultation</button>
+
+                        <div class="form-success-banner" id="cSuccessBanner">
+                            <svg class="success-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Thank you! We will reach out to schedule your consultation.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. PROJECT TYPE VISUAL STRIP SECTION -->
+    <section class="section project-tiles-section">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>EXPERTISE BY CATEGORY</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">Specialized Construction Sectors</h2>
+            </div>
+
+            <div class="tiles-grid reveal-element">
+                <!-- Tile 1: Residential -->
+                <div class="tile-card quote-modal-trigger">
+                    <img src="assets/images/project-2.jpg" alt="Residential Construction" class="tile-img" loading="lazy">
+                    <div class="tile-overlay">
+                        <div class="tile-content">
+                            <h3 class="tile-title">Residential</h3>
+                            <span class="tile-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tile 2: Commercial -->
+                <div class="tile-card quote-modal-trigger">
+                    <img src="assets/images/project-3.jpg" alt="Commercial Construction" class="tile-img" loading="lazy">
+                    <div class="tile-overlay">
+                        <div class="tile-content">
+                            <h3 class="tile-title">Commercial</h3>
+                            <span class="tile-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tile 3: Villa -->
+                <div class="tile-card quote-modal-trigger">
+                    <img src="assets/images/cat-villa.jpg" alt="Villa Construction" class="tile-img" loading="lazy">
+                    <div class="tile-overlay">
+                        <div class="tile-content">
+                            <h3 class="tile-title">Villa</h3>
+                            <span class="tile-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tile 4: Renovation -->
+                <div class="tile-card quote-modal-trigger">
+                    <img src="assets/images/cat-renovation.jpg" alt="Renovation Services" class="tile-img" loading="lazy">
+                    <div class="tile-overlay">
+                        <div class="tile-content">
+                            <h3 class="tile-title">Renovation</h3>
+                            <span class="tile-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. WHY RB CONSTRUCTION - RESPONSIBILITY SECTION -->
+    <section class="section responsibility-section">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>WHY RB CONSTRUCTION</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">More Than Construction. We Build With Responsibility.</h2>
+                <p class="section-subtitle">
+                    Every project is different. Our approach focuses on understanding the client's requirements, planning carefully and executing every stage with attention to quality and detail.
+                </p>
+            </div>
+
+            <div class="responsibility-list reveal-element">
+                <div class="resp-item">
+                    <span class="resp-number">01</span>
+                    <div class="resp-content">
+                        <h3 class="resp-title">QUALITY-FIRST APPROACH</h3>
+                        <p class="resp-desc">From materials to workmanship, we focus on maintaining consistent quality throughout the project.</p>
+                    </div>
+                </div>
+
+                <div class="resp-item">
+                    <span class="resp-number">02</span>
+                    <div class="resp-content">
+                        <h3 class="resp-title">CLEAR COMMUNICATION</h3>
+                        <p class="resp-desc">Keep clients informed about project progress, requirements and important decisions.</p>
+                    </div>
+                </div>
+
+                <div class="resp-item">
+                    <span class="resp-number">03</span>
+                    <div class="resp-content">
+                        <h3 class="resp-title">PLANNED EXECUTION</h3>
+                        <p class="resp-desc">A structured approach helps coordinate design, construction and finishing efficiently.</p>
+                    </div>
+                </div>
+
+                <div class="resp-item">
+                    <span class="resp-number">04</span>
+                    <div class="resp-content">
+                        <h3 class="resp-title">ATTENTION TO DETAIL</h3>
+                        <p class="resp-desc">We pay attention to the small details that contribute to the final quality of a space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. QUALITY & WORKMANSHIP SECTION -->
+    <section class="section workmanship-section">
+        <div class="container">
+            <div class="workmanship-grid">
+                <!-- Left Image Column -->
+                <div class="workmanship-image-column reveal-element">
+                    <div class="workmanship-image-wrapper">
+                        <img src="assets/images/quality-img.jpg" alt="RB Construction Quality Inspection & Workmanship" class="workmanship-img" loading="lazy">
+                        <div class="workmanship-image-accent"></div>
+                    </div>
+                </div>
+
+                <!-- Right Checklist Column -->
+                <div class="workmanship-content-column reveal-element">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span>QUALITY & WORKMANSHIP</span>
+                    </div>
+                    <h2 class="section-title">Built Carefully. Finished With Attention.</h2>
+                    <p class="workmanship-desc">
+                        Good construction is not only about completing a structure. It is about making sure every stage is planned, coordinated and executed with care.
+                    </p>
+
+                    <div class="workmanship-checklist">
+                        <div class="check-item">
+                            <span class="check-mark">✓</span>
+                            <span>Careful material selection</span>
+                        </div>
+                        <div class="check-item">
+                            <span class="check-mark">✓</span>
+                            <span>Skilled workmanship</span>
+                        </div>
+                        <div class="check-item">
+                            <span class="check-mark">✓</span>
+                            <span>Regular project coordination</span>
+                        </div>
+                        <div class="check-item">
+                            <span class="check-mark">✓</span>
+                            <span>Quality-focused execution</span>
+                        </div>
+                        <div class="check-item">
+                            <span class="check-mark">✓</span>
+                            <span>Detailed finishing</span>
+                        </div>
+                        <div class="check-item">
+                            <span class="check-mark">✓</span>
+                            <span>Final inspection before handover</span>
+                        </div>
+                    </div>
+
+                    <a href="#consultation" class="workmanship-link">Learn About Our Approach &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. MATERIALS & FINISHING SECTION -->
+    <section class="section materials-section">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>MATERIALS & FINISHING</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">Quality You Can See</h2>
+                <p class="section-subtitle">
+                    We focus on the details that shape the final look, feel and durability of your space.
+                </p>
+            </div>
+
+            <div class="materials-grid reveal-element">
+                <!-- Category 1 -->
+                <div class="material-card">
+                    <div class="material-card-header">
+                        <span class="mat-num">01</span>
+                        <div class="mat-icon-box">
+                            <svg class="mat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="mat-title">STRUCTURE</h3>
+                    <p class="mat-desc">Strong foundations and construction practices.</p>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="material-card">
+                    <div class="material-card-header">
+                        <span class="mat-num">02</span>
+                        <div class="mat-icon-box">
+                            <svg class="mat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="mat-title">ELECTRICAL</h3>
+                    <p class="mat-desc">Planned electrical coordination for practical spaces.</p>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="material-card">
+                    <div class="material-card-header">
+                        <span class="mat-num">03</span>
+                        <div class="mat-icon-box">
+                            <svg class="mat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="mat-title">PLUMBING</h3>
+                    <p class="mat-desc">Reliable plumbing coordination and installation.</p>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="material-card">
+                    <div class="material-card-header">
+                        <span class="mat-num">04</span>
+                        <div class="mat-icon-box">
+                            <svg class="mat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="mat-title">FINISHING</h3>
+                    <p class="mat-desc">Careful attention to flooring, walls, fixtures and final details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. TRANSPARENT PROJECT JOURNEY SECTION -->
+    <section class="section journey-section">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>CLIENT EXPERIENCE</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">Clear From The First Conversation To Final Handover</h2>
+            </div>
+
+            <div class="journey-timeline reveal-element">
+                <div class="journey-line"></div>
+                <div class="journey-steps">
+                    <div class="journey-step">
+                        <div class="journey-badge">01</div>
+                        <h3 class="j-title">DISCUSS</h3>
+                        <p class="j-desc">Understand your requirements, budget and expectations.</p>
+                    </div>
+
+                    <div class="journey-step">
+                        <div class="journey-badge">02</div>
+                        <h3 class="j-title">PLAN</h3>
+                        <p class="j-desc">Organize design, scope, timeline and execution requirements.</p>
+                    </div>
+
+                    <div class="journey-step">
+                        <div class="journey-badge">03</div>
+                        <h3 class="j-title">EXECUTE</h3>
+                        <p class="j-desc">Coordinate the construction process and keep progress visible.</p>
+                    </div>
+
+                    <div class="journey-step">
+                        <div class="journey-badge">04</div>
+                        <h3 class="j-title">HANDOVER</h3>
+                        <p class="j-desc">Complete finishing, review the work and prepare the project for handover.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. TRUST STATEMENT SECTION -->
+    <section class="section trust-statement-section">
+        <div class="trust-bg-overlay"></div>
+        <div class="container trust-statement-container reveal-element text-center">
+            <h2 class="trust-statement-heading">
+                Built For Today.<br>
+                <span class="heading-accent">Designed For Tomorrow.</span>
+            </h2>
+            <p class="trust-statement-desc">
+                Thoughtful planning, quality-focused construction and a commitment to delivering spaces that remain valuable for years to come.
+            </p>
+            <button class="btn btn-primary quote-modal-trigger">Start Your Project</button>
+        </div>
+    </section>
+
+    <!-- 15. CLIENT JOURNEY HIGHLIGHT STRIP -->
+    <div class="journey-highlight-strip">
+        <div class="container">
+            <div class="highlight-flow">
+                <div class="flow-node">
+                    <span class="node-title">CONSULT</span>
+                </div>
+                <span class="flow-arrow">&rarr;</span>
+                <div class="flow-node">
+                    <span class="node-title">PLAN</span>
+                </div>
+                <span class="flow-arrow">&rarr;</span>
+                <div class="flow-node">
+                    <span class="node-title">BUILD</span>
+                </div>
+                <span class="flow-arrow">&rarr;</span>
+                <div class="flow-node">
+                    <span class="node-title">DELIVER</span>
+                </div>
+            </div>
+            <p class="highlight-subtext">One structured journey from your first idea to the completed space.</p>
+        </div>
+    </div>
+
+    <!-- 16. OUR TEAM SECTION -->
+    <section class="section team-section" id="team">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>OUR TEAM</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">People Behind Every Project</h2>
+                <p class="section-subtitle">
+                    A coordinated team working together to turn ideas into well-planned and carefully executed spaces.
+                </p>
+            </div>
+
+            <div class="team-grid reveal-element">
+                <!-- Member 01 -->
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="assets/images/why-choose-img.jpg" alt="Project Director - Team Member 01" class="team-img" loading="lazy">
+                        <div class="team-overlay">
+                            <span class="team-role-badge">01</span>
+                            <div class="team-info">
+                                <span class="team-role">Project Director</span>
+                                <h3 class="team-name">Team Member 01</h3>
+                                <p class="team-desc">Project planning and overall coordination</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 02 -->
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="assets/images/about-img.jpg" alt="Architectural Designer - Team Member 02" class="team-img" loading="lazy">
+                        <div class="team-overlay">
+                            <span class="team-role-badge">02</span>
+                            <div class="team-info">
+                                <span class="team-role">Architectural Designer</span>
+                                <h3 class="team-name">Team Member 02</h3>
+                                <p class="team-desc">Design development and planning coordination</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 03 -->
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="assets/images/quality-img.jpg" alt="Site Engineer - Team Member 03" class="team-img" loading="lazy">
+                        <div class="team-overlay">
+                            <span class="team-role-badge">03</span>
+                            <div class="team-info">
+                                <span class="team-role">Site Engineer</span>
+                                <h3 class="team-name">Team Member 03</h3>
+                                <p class="team-desc">On-site execution and construction coordination</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 04 -->
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="assets/images/consultation-img.jpg" alt="Project Coordinator - Team Member 04" class="team-img" loading="lazy">
+                        <div class="team-overlay">
+                            <span class="team-role-badge">04</span>
+                            <div class="team-info">
+                                <span class="team-role">Project Coordinator</span>
+                                <h3 class="team-name">Team Member 04</h3>
+                                <p class="team-desc">Client communication and project progress coordination</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 17. ARCHITECTURAL & 3D DESIGNS SHOWCASE SECTION -->
+    <section class="section designs-section" id="3d-designs">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>DESIGN VISUALIZATION</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">See Your Space Before It's Built</h2>
+                <p class="section-subtitle">
+                    Architectural visualization helps clients understand the look, layout and character of their future space before construction begins.
+                </p>
+            </div>
+
+            <div class="designs-grid reveal-element">
+                <!-- 01 Exterior Design -->
+                <div class="design-card lightbox-trigger" data-title="Exterior Design" data-img="assets/images/project-1.jpg">
+                    <img src="assets/images/project-1.jpg" alt="Exterior Design" class="design-img" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-badge">01</span>
+                        <h3 class="design-title">Exterior Design</h3>
+                    </div>
+                </div>
+
+                <!-- 02 Interior Design -->
+                <div class="design-card lightbox-trigger" data-title="Interior Design" data-img="assets/images/cat-renovation.jpg">
+                    <img src="assets/images/cat-renovation.jpg" alt="Interior Design" class="design-img" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-badge">02</span>
+                        <h3 class="design-title">Interior Design</h3>
+                    </div>
+                </div>
+
+                <!-- 03 Living Space -->
+                <div class="design-card lightbox-trigger" data-title="Living Space" data-img="assets/images/project-2.jpg">
+                    <img src="assets/images/project-2.jpg" alt="Living Space" class="design-img" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-badge">03</span>
+                        <h3 class="design-title">Living Space</h3>
+                    </div>
+                </div>
+
+                <!-- 04 Modern Elevation -->
+                <div class="design-card lightbox-trigger" data-title="Modern Elevation" data-img="assets/images/cat-villa.jpg">
+                    <img src="assets/images/cat-villa.jpg" alt="Modern Elevation" class="design-img" loading="lazy">
+                    <div class="design-overlay">
+                        <span class="design-badge">04</span>
+                        <h3 class="design-title">Modern Elevation</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 18. COMPLETED PROJECT GALLERY SECTION -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>PROJECT GALLERY</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">A Glimpse Into Our Work</h2>
+                <p class="section-subtitle">
+                    Explore construction, architecture and finishing details through our project visuals.
+                </p>
+            </div>
+
+            <!-- Gallery Category Filters -->
+            <div class="gallery-filters reveal-element">
+                <button class="g-filter-btn active" data-gfilter="all">All</button>
+                <button class="g-filter-btn" data-gfilter="exterior">Exterior</button>
+                <button class="g-filter-btn" data-gfilter="interior">Interior</button>
+                <button class="g-filter-btn" data-gfilter="construction">Construction</button>
+                <button class="g-filter-btn" data-gfilter="finishing">Finishing</button>
+            </div>
+
+            <!-- Asymmetric Editorial Gallery Grid -->
+            <div class="gallery-masonry-grid reveal-element">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item lightbox-trigger" data-gcategory="exterior" data-title="Architectural Villa Exterior" data-img="assets/images/project-1.jpg">
+                    <img src="assets/images/project-1.jpg" alt="Architectural Villa Exterior" class="g-img" loading="lazy">
+                    <div class="g-overlay">
+                        <h4 class="g-title">Architectural Villa Exterior</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item lightbox-trigger" data-gcategory="interior" data-title="Luxury Living Space" data-img="assets/images/cat-renovation.jpg">
+                    <img src="assets/images/cat-renovation.jpg" alt="Luxury Living Space" class="g-img" loading="lazy">
+                    <div class="g-overlay">
+                        <h4 class="g-title">Luxury Living Space</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item lightbox-trigger" data-gcategory="construction" data-title="Structural Construction Phase" data-img="assets/images/hero-bg.jpg">
+                    <img src="assets/images/hero-bg.jpg" alt="Structural Construction Phase" class="g-img" loading="lazy">
+                    <div class="g-overlay">
+                        <h4 class="g-title">Structural Construction Phase</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item lightbox-trigger" data-gcategory="exterior" data-title="Contemporary Elevation" data-img="assets/images/project-2.jpg">
+                    <img src="assets/images/project-2.jpg" alt="Contemporary Elevation" class="g-img" loading="lazy">
+                    <div class="g-overlay">
+                        <h4 class="g-title">Contemporary Elevation</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item lightbox-trigger" data-gcategory="finishing" data-title="Quality Finishing Detail" data-img="assets/images/quality-img.jpg">
+                    <img src="assets/images/quality-img.jpg" alt="Quality Finishing Detail" class="g-img" loading="lazy">
+                    <div class="g-overlay">
+                        <h4 class="g-title">Quality Finishing Detail</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item lightbox-trigger" data-gcategory="exterior" data-title="Corporate Headquarters Facade" data-img="assets/images/project-3.jpg">
+                    <img src="assets/images/project-3.jpg" alt="Corporate Headquarters Facade" class="g-img" loading="lazy">
+                    <div class="g-overlay">
+                        <h4 class="g-title">Corporate Headquarters Facade</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item lightbox-trigger" data-gcategory="exterior" data-title="Luxury Villa Poolside" data-img="assets/images/cat-villa.jpg">
+                    <img src="assets/images/cat-villa.jpg" alt="Luxury Villa Poolside" class="g-img" loading="lazy">
+                    <div class="g-overlay">
+                        <h4 class="g-title">Luxury Villa Poolside</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item lightbox-trigger" data-gcategory="construction" data-title="On-Site Engineering Coordination" data-img="assets/images/why-choose-img.jpg">
+                    <img src="assets/images/why-choose-img.jpg" alt="On-Site Engineering Coordination" class="g-img" loading="lazy">
+                    <div class="g-overlay">
+                        <h4 class="g-title">On-Site Engineering Coordination</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 19. FEATURED VISUAL STORY SECTION -->
+    <section class="section visual-story-section">
+        <div class="story-bg-overlay"></div>
+        <div class="container story-container reveal-element text-center">
+            <h2 class="story-heading">Every Detail Matters</h2>
+            <p class="story-desc">
+                From structure to finishing, we believe quality is visible in the details.
+            </p>
+            <a href="#projects" class="btn btn-primary">Explore Our Projects</a>
+        </div>
+    </section>
+
+    <!-- INSTAGRAM SECTION -->
+    <section class="section instagram-section" id="instagram">
+        <div class="container">
+            <div class="insta-card reveal-element">
+                <div class="insta-avatar" aria-hidden="true">RB</div>
+                <div class="insta-info">
+                    <span class="insta-eyebrow">FOLLOW OUR WORK</span>
+                    <h3 class="insta-handle">rb_engineers_and_contractors_</h3>
+                    <p class="insta-text">See our latest site updates, ongoing constructions and renovation work on Instagram.</p>
+                    <div class="insta-tabs">
+                        <a href="https://www.instagram.com/rb_engineers_and_contractors_/" target="_blank" rel="noopener noreferrer">POSTS</a>
+                        <a href="https://www.instagram.com/rb_engineers_and_contractors_/" target="_blank" rel="noopener noreferrer">REELS</a>
+                    </div>
+                </div>
+                <a href="https://www.instagram.com/rb_engineers_and_contractors_/" target="_blank" rel="noopener noreferrer" class="btn btn-primary insta-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg><span>View Profile</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header text-center reveal-element">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>CONTACT US</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">Let's Talk About Your Project</h2>
+                <p class="section-subtitle">
+                    Call, message or find us on Google &mdash; our team will be happy to help.
+                </p>
+            </div>
+            <div class="contact-grid reveal-element">
+                <a href="tel:+919876543210" class="contact-card">
+                    <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+                    <h4 class="contact-card-title">Call Us</h4>
+                    <p class="contact-card-text">+91 98765 43210</p>
+                </a>
+                <a href="https://wa.me/919876543210?text=Hello%20RB%20Construction,%20I%20would%20like%20to%20enquire%20about%20your%20construction%20services." target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span>
+                    <h4 class="contact-card-title">WhatsApp</h4>
+                    <p class="contact-card-text">Chat with our team</p>
+                </a>
+                <a href="mailto:info@rbconstruction.com" class="contact-card">
+                    <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span>
+                    <h4 class="contact-card-title">Email</h4>
+                    <p class="contact-card-text">info@rbconstruction.com</p>
+                </a>
+                <a href="https://share.google/VJ4IeUOVJwbFn8fv3" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+                    <h4 class="contact-card-title">Find Us on Google</h4>
+                    <p class="contact-card-text">View location &amp; reviews</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 20. CALL TO ACTION SECTION -->
+    <section class="section cta-section">
+        <div class="container text-center reveal-element">
+            <div class="cta-card">
+                <div class="section-eyebrow justify-center">
+                    <span class="eyebrow-line"></span>
+                    <span>START YOUR JOURNEY</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+                <h2 class="section-title">Planning Your Next Project?</h2>
+                <p class="section-subtitle">
+                    Let's discuss your ideas, requirements and construction plans.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary quote-modal-trigger">Get Free Quote</button>
+                    <a href="tel:+919876543210" class="btn btn-secondary btn-dark">Talk to Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox-modal" id="lightboxModal" aria-hidden="true">
+        <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+        <div class="lightbox-container">
+            <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close Lightbox">&times;</button>
+            <button class="lightbox-nav-btn prev-btn" id="lightboxPrevBtn" aria-label="Previous Image">&#10094;</button>
+            <button class="lightbox-nav-btn next-btn" id="lightboxNextBtn" aria-label="Next Image">&#10095;</button>
+            
+            <div class="lightbox-content">
+                <img src="" alt="" id="lightboxImg" class="lightbox-img">
+                <div class="lightbox-caption" id="lightboxCaption"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand-col">
+                    <a href="index.html" class="brand-logo footer-logo">
+                        <span class="logo-box">RB</span>
+                        <span class="logo-text">CONSTRUCTION<span class="logo-dot">.</span></span>
+                    </a>
+                    <p class="footer-text">
+                        Delivering quality residential and commercial construction solutions focused on structural strength, functional design, and transparent execution.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/rb_engineers_and_contractors_/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="RB Engineers &amp; Contractors on Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="https://share.google/VJ4IeUOVJwbFn8fv3" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Find RB Construction on Google" title="Find us on Google"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="projects.html">Featured Projects</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service-details.html?service=residential-construction">Residential Construction</a></li>
+                        <li><a href="service-details.html?service=commercial-construction">Commercial Construction</a></li>
+                        <li><a href="service-details.html?service=architectural-planning">Architectural Planning</a></li>
+                        <li><a href="service-details.html?service=interior-finishing">Interior &amp; Finishing</a></li>
+                        <li><a href="service-details.html?service=renovation-remodeling">Renovation &amp; Remodeling</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <p class="footer-contact-item">
+                        <strong>Address:</strong> Tamil Nadu, India
+                    </p>
+                    <p class="footer-contact-item">
+                        <strong>Phone:</strong> +91 98765 43210
+                    </p>
+                    <p class="footer-contact-item">
+                        <strong>Email:</strong> info@rbconstruction.com
+                    </p>
+                    <p class="footer-contact-item">
+                        <strong>Instagram:</strong> <a href="https://www.instagram.com/rb_engineers_and_contractors_/" target="_blank" rel="noopener noreferrer">@rb_engineers_and_contractors_</a>
+                    </p>
+                    <p class="footer-contact-item">
+                        <strong>Google:</strong> <a href="https://share.google/VJ4IeUOVJwbFn8fv3" target="_blank" rel="noopener noreferrer">Find us on Google</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 RB Construction. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- FLOATING CONTACT BUTTONS -->
+    <div class="floating-contact-wrapper">
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/919876543210?text=Hello%20RB%20Construction,%20I%20would%20like%20to%20enquire%20about%20your%20construction%20services." target="_blank" rel="noopener noreferrer" class="floating-btn whatsapp-btn" aria-label="Chat on WhatsApp">
+            <svg class="floating-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+        </a>
+        <!-- Call Floating Button -->
+        <a href="tel:+919876543210" class="floating-btn phone-btn" aria-label="Call RB Construction">
+            <svg class="floating-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+        </a>
+    </div>
+
+    <!-- 8. GET FREE QUOTE MODAL POPUP -->
+    <div class="modal-backdrop" id="quoteModalBackdrop" aria-hidden="true">
+        <div class="modal-container" role="dialog" aria-labelledby="modalTitle">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+            
+            <div class="modal-grid">
+                <!-- Left Visual Column -->
+                <div class="modal-left-column">
+                    <div class="modal-bg-overlay"></div>
+                    <div class="modal-left-content">
+                        <span class="modal-eyebrow">RB CONSTRUCTION</span>
+                        <h3 class="modal-left-title" id="modalTitle">Let's Build Your Vision</h3>
+                        <p class="modal-left-text">Tell us about your project and our team will get in touch with you.</p>
+                        <div class="modal-contact-badge">
+                            <span>Direct Line:</span>
+                            <strong>+91 98765 43210</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form Column -->
+                <div class="modal-right-column">
+                    <form class="quote-form" id="quoteForm" novalidate>
+                        <h4 class="form-title">Request a Free Quote</h4>
+                        
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Enter your full name" required>
+                            <span class="error-msg" id="fullNameError"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mobileNumber" class="form-label">Mobile Number *</label>
+                                <input type="tel" id="mobileNumber" name="mobileNumber" class="form-input" placeholder="e.g. 9876543210" required>
+                                <span class="error-msg" id="mobileNumberError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="emailAddress" class="form-label">Email Address *</label>
+                                <input type="email" id="emailAddress" name="emailAddress" class="form-input" placeholder="name@example.com" required>
+                                <span class="error-msg" id="emailAddressError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cityArea" class="form-label">City / Area *</label>
+                                <input type="text" id="cityArea" name="cityArea" class="form-input" placeholder="e.g. Coimbatore" required>
+                                <span class="error-msg" id="cityAreaError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="projectType" class="form-label">Project Type *</label>
+                                <select id="projectType" name="projectType" class="form-input" required>
+                                    <option value="" disabled selected>Select Project Type</option>
+                                    <option value="Residential Construction">Residential Construction</option>
+                                    <option value="Commercial Construction">Commercial Construction</option>
+                                    <option value="Renovation">Renovation</option>
+                                    <option value="Interior & Finishing">Interior & Finishing</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <span class="error-msg" id="projectTypeError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectMessage" class="form-label">Message (Optional)</label>
+                            <textarea id="projectMessage" name="projectMessage" class="form-input form-textarea" rows="3" placeholder="Share brief details about your plot or requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit-btn">Request a Free Quote</button>
+
+                        <div class="form-success-banner" id="formSuccessBanner">
+                            <svg class="success-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Thank you! Your enquiry has been received.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script type="module" src="script.js"></script>
+</body>
 </html>

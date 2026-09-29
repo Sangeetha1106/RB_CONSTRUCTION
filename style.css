@@ -76,7 +76,7 @@ html {
     scroll-behavior: smooth;
     font-size: 16px;
     height: 100%;
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-surface-light);
 }
 
 body {
@@ -84,7 +84,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--font-body);
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-surface-light);
     color: var(--color-text-main);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
@@ -2846,6 +2846,93 @@ button {
 
 .contact-hero-bg {
     background-image: url('assets/images/client-first-bg.jpg');
+}
+
+/* --------------------------------------------------------------------------
+   CONTACT PAGE MAIN SECTION STYLES
+   -------------------------------------------------------------------------- */
+.contact-main-section {
+    background-color: var(--color-white);
+    padding: 5rem 0;
+}
+
+.contact-layout-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 3.5rem;
+    align-items: start;
+}
+
+.contact-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.contact-info-card {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.25rem 1.5rem;
+    background-color: var(--color-surface-light);
+    border: 1px solid var(--color-silver);
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(14, 41, 66, 0.04);
+    transition: var(--transition-smooth);
+}
+
+.contact-info-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-accent);
+    box-shadow: 0 8px 24px rgba(14, 41, 66, 0.08);
+}
+
+.contact-card-num {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--color-accent);
+    background-color: var(--color-accent-light);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-card-details h3 {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: 0.2rem;
+}
+
+.contact-card-details p, .contact-card-details a {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+}
+
+.contact-card-details a:hover {
+    color: var(--color-accent-hover);
+}
+
+.contact-form-card {
+    background-color: var(--color-surface-light);
+    border: 1px solid var(--color-silver);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(14, 41, 66, 0.05);
+}
+
+@media (max-width: 992px) {
+    .contact-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
 }
 
 .service-details-hero-bg {
